@@ -22,7 +22,7 @@ docker run -it --rm --entrypoint /bin/bash --name laravel-root laravel-root
 
 2. Создания в контейнере пользователя без root прав:
 
--Создать образ на основе root.Dockerfile:
+-Создать образ на основе user.Dockerfile:
 docker build -t laravel-user -f user.Dockerfile .
 
 -Запустьть контейнер на 8000 порте:
